@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #f8f9fa; }
+        .sidebar {
+            height: 100vh;
+            background-color: #198754;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+        }
+        .sidebar a:hover {
+            background-color: #157347;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-md-2 sidebar p-0">
+            <h4 class="text-center text-white py-3">Customer</h4>
+            <a href="#">New Consignment</a>
+            <a href="#">Track Order</a>
+            <a href="#">Payments</a>
+            <a href="#">History</a>
+            <a href="../index.html">Logout</a>
+        </div>
+
+        <!-- Content -->
+        <div class="col-md-10 p-4">
+            <h2>Welcome, Customer</h2>
+            <p class="text-muted">Your transport activity summary</p>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5>Active Orders</h5>
+                            <h3>3</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5>Completed Orders</h5>
+                            <h3>20</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center shadow-sm">
+                        <div class="card-body">
+                            <h5>Total Payments</h5>
+                            <h3>₹45,000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
